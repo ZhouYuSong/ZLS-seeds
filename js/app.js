@@ -5,6 +5,7 @@
 define([
     'angular',
     'uiRouter',
+    'oCanvas',
     './controllers/index',
     './directives/index',
     './filters/index',
@@ -17,6 +18,7 @@ define([
         'app.controllers',
         'app.filters',
         'app.directives',
-        'ui.router'
+        'ui.router',
+        'oCanvas'
     ]);
 });

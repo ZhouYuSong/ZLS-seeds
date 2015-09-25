@@ -5,6 +5,7 @@
 define([
     'require',
     'angular',
+    'oCanvas',
     'app',
     'routes'
 ], function (require, ng) {

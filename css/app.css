@@ -1,30 +1,73 @@
-/* app css stylesheet */
+body {
+  background: #337ab7; }
 
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
+#page_login {
+  width: 1600px;
+  height: 775px;
+  margin: 0 auto auto auto;
+  background: url("../image/login/denglu.jpg") no-repeat;
+  background-size: 1600px 800px; }
+
+#username {
+  position: relative;
+  background: url("../image/login/unameOff.png") no-repeat;
+  left: 857px;
+  top: 311px;
+  width: 194px;
+  height: 35px;
+  border: none;
+  padding-left: 50px; }
+
+#username:focus {
+  background: url("../image/login/unameOn.png") no-repeat;
+  border: transparent; }
+
+#password {
+  display: block;
+  background: url("../image/login/pwdOff.png") no-repeat;
+  position: relative;
+  left: 857px;
+  top: 336px;
+  width: 194px;
+  height: 35px;
+  border: none;
+  padding-left: 50px; }
+#server_label{
+  position: relative;
+  left: 862px;
+  top: 361px;
+  text-align: left;
+  font-size: 17px
 }
+#servers {
+  display: inline-block;
+  position: relative;
+  left: 870px;
+  top: 361px;
+  width: 170px;
+  text-align: left;
+  border: 3px solid #afd9ee;
+  font-size: 17px; }
 
-.menu:before {
-  content: "[";
-}
+#password:focus {
+  background: url("../image/login/pwdOn.png") no-repeat; }
 
-.menu:after {
-  content: "]";
-}
+#btn_login {
+  display: block;
+  background: url("../image/login/loginOff.png") no-repeat;
+  position: relative;
+  border: none;
+  left: 857px;
+  top: 386px;
+  width: 245px;
+  height: 38px; }
 
-.menu > li {
-  display: inline;
-}
+#btn_login:focus {
+  background: url("../image/login/loginOn.png") no-repeat; }
 
-.menu > li:before {
-  content: "|";
-  padding-right: 0.3em;
-}
-
-.menu > li:nth-child(1):before {
-  content: "";
-  padding: 0;
+#myContent{
+  margin: 0px auto;
+  position: relative;
+  height: 750px;
+  width: 1600px;
 }

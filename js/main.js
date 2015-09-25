@@ -8,7 +8,8 @@ require.config({
     paths: {
         'domReady': '../lib/requirejs-domready/domReady',
         'angular': '../lib/angular/angular',
-        "uiRouter": "../lib/angular/angular-ui-router"
+        "uiRouter": "../lib/angular/angular-ui-router",
+        'oCanvas':"../lib/ocanvas-2.7.4"
     },
 
     /**
@@ -18,6 +19,9 @@ require.config({
     shim: {
         'angular': {
             exports: 'angular'
+        },
+        'oCanvas':{
+          exports:'oCanvas'
         },
         'uiRouter':{
             deps: ['angular']

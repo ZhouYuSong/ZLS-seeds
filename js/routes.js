@@ -2,37 +2,29 @@
  * Defines the main routes in the application.
  * The routes you see here will be anchors '#/' unless specifically configured otherwise.
  */
-
-/*define(['./app'], function (app) {
-    'use strict';
-    return app.config(['$routeProvider', function ($routeProvider) {
-        $routeProvider.when('/view1', {
-            templateUrl: 'partials/partial1.html',
-            controller: 'MyCtrl1'
-        });
-
-        $routeProvider.when('/view2', {
-            templateUrl: 'partials/partial2.html',
-            controller: 'MyCtrl2'
-        });
-
-        $routeProvider.otherwise({
-            redirectTo: '/view1'
-        });
-    }]);
-});*/
 define(['./app'], function(app) {
     'use strict';
-    return app.config(function($stateProvider) {
-        $stateProvider.state('view1',{
-            url: '/view1',
-            templateUrl: 'partials/partial1.html',
-            controller:'MyCtrl1'
+    return app.config(function($stateProvider,$urlRouterProvider) {
+        $urlRouterProvider.otherwise('/login');
+        $stateProvider.state('login',{
+            url: '/login',
+            templateUrl: 'partials/login.html',
+            controller:'loginCtrl'
         })
-        .state('view2',{
-            url: '/view2',
-            templateUrl: 'partials/partial2.html',
-            controller: 'MyCtrl2'
+        .state('show_ground',{
+            url: '/show_ground',
+            views:{
+                '': {
+                    templateUrl: 'partials/show_ground.html',
+                    controller:'showGroundCtrl'
+                },
+                'top@show_ground': {
+                    templateUrl: 'partials/top.html'
+                },
+                'down@show_ground': {
+                    templateUrl: 'partials/down.html'
+                }
+            }
         });
     })
 });
