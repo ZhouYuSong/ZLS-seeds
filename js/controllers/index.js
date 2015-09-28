@@ -7,5 +7,7 @@
 define([
     './loginCtrl',
     './showGroundCtrl',
+    './ZPNewCtrl',
+    './ZPOldCtrl',
     './showDynamicCtrl'
 ], function () {});

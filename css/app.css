@@ -69,3 +69,48 @@
   height: 750px;
   width: 1600px;
 }
+
+#ZP_New_content ,#ZP_Old_content{
+  font-family: '微软雅黑','Source Sans Pro';
+  font-size: 15px;
+  width: 1600px;
+  height: 800px;
+  margin:0px auto;
+}
+#btn_start_ZP{
+  z-index: 11;
+  position: relative;
+  left: 1100px;
+  top: 15px;
+}
+#btn_upS_ZP{
+  z-index: 11;
+  position: relative;
+  left: 1100px;
+  top: 15px;
+}
+#txt_speed{
+  z-index: 11;
+  position: relative;
+  text-align: center;
+  padding-top: 5px;
+  left: 1100px;
+  width:50px;
+  height:34px;
+  top: 15px;
+  display: inline-block;
+  background-color:#5cc0de;
+  color:#ffffff;
+}
+#btn_downS_ZP{
+  z-index: 11;
+  position: relative;
+  left: 1100px;
+  top: 15px;
+}
+#btn_reset_ZP{
+  z-index: 11;
+  position: relative;
+  left: 1100px;
+  top: 15px;
+}

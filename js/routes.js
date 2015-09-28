@@ -42,7 +42,36 @@ define(['./app'], function (app) {
                     }
                 }
             })
-
+            .state('ZP_new', {
+                url: '/ZP_new',
+                views: {
+                    '': {
+                        templateUrl: 'partials/ZP_new.html',
+                        controller: 'ZPNewCtrl'
+                    },
+                    'top@ZP_new': {
+                        templateUrl: 'partials/top.html'
+                    },
+                    'down@ZP_new': {
+                        templateUrl: 'partials/down.html'
+                    }
+                }
+            })
+            .state('ZP_old', {
+                url: '/ZP_old',
+                views: {
+                    '': {
+                        templateUrl: 'partials/ZP_old.html',
+                        controller: 'ZPOldCtrl'
+                    },
+                    'top@ZP_old': {
+                        templateUrl: 'partials/top.html'
+                    },
+                    'down@ZP_old': {
+                        templateUrl: 'partials/down.html'
+                    }
+                }
+            })
         ;
     })
 });
