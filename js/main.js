@@ -7,9 +7,11 @@ require.config({
 
     paths: {
         'domReady': '../lib/requirejs-domready/domReady',
+        'jquery':'../lib/jquery.min',
         'angular': '../lib/angular/angular',
         "uiRouter": "../lib/angular/angular-ui-router",
-        'oCanvas':"../lib/ocanvas-2.7.4"
+        'oCanvas':"../lib/ocanvas-2.7.4",
+        'myoCanvas':'../lib/my_oCanvas'
     },
 
     /**
@@ -18,10 +20,14 @@ require.config({
      */
     shim: {
         'angular': {
+            deps:['jquery'],
             exports: 'angular'
         },
         'oCanvas':{
           exports:'oCanvas'
+        },
+        'myoCanvas':{
+            exports:'myoCanvas'
         },
         'uiRouter':{
             deps: ['angular']

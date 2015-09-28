@@ -3,9 +3,11 @@
  * this should be used for top-level module definitions only
  */
 define([
+    //'jquery',
     'angular',
     'uiRouter',
     'oCanvas',
+    'myoCanvas',
     './controllers/index',
     './directives/index',
     './filters/index',
@@ -18,7 +20,6 @@ define([
         'app.controllers',
         'app.filters',
         'app.directives',
-        'ui.router',
-        'oCanvas'
+        'ui.router'
     ]);
 });

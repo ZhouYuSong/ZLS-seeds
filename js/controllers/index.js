@@ -6,5 +6,6 @@
  **/
 define([
     './loginCtrl',
-    './showGroundCtrl'
+    './showGroundCtrl',
+    './showDynamicCtrl'
 ], function () {});

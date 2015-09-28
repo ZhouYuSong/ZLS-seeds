@@ -4,6 +4,7 @@
  */
 define([
     'require',
+    //'jquery',
     'angular',
     'oCanvas',
     'app',

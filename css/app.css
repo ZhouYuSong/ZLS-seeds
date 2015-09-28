@@ -1,5 +1,3 @@
-body {
-  background: #337ab7; }
 
 #page_login {
   width: 1600px;
@@ -13,7 +11,7 @@ body {
   background: url("../image/login/unameOff.png") no-repeat;
   left: 857px;
   top: 311px;
-  width: 194px;
+  width: 234px;
   height: 35px;
   border: none;
   padding-left: 50px; }
@@ -28,7 +26,7 @@ body {
   position: relative;
   left: 857px;
   top: 336px;
-  width: 194px;
+  width: 234px;
   height: 35px;
   border: none;
   padding-left: 50px; }
