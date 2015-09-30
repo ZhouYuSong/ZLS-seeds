@@ -9,5 +9,7 @@ define([
     './showGroundCtrl',
     './ZPNewCtrl',
     './ZPOldCtrl',
+    './showQsCtrl',
+    //'./showJjcCtrl',
     './showDynamicCtrl'
 ], function () {});

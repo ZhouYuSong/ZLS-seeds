@@ -72,6 +72,22 @@ define(['./app'], function (app) {
                     }
                 }
             })
+            .state('single_qs',{
+                url:'/single_qs',
+                views:{
+                    '':{
+                        templateUrl:'partials/single.html',
+                        controller:'showQsCtrl'
+                    },
+                    'top@single_qs': {
+                        templateUrl: 'partials/top.html'
+                    },
+                    'down@single_qs': {
+                        templateUrl: 'partials/down.html'
+                    }
+                }
+
+            })
         ;
     })
 });
