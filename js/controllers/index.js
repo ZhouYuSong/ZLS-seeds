@@ -10,6 +10,7 @@ define([
     './ZPNewCtrl',
     './ZPOldCtrl',
     './showQsCtrl',
-    //'./showJjcCtrl',
+    './showJjcCtrl',
+    './showVlCtrl',
     './showDynamicCtrl'
 ], function () {});

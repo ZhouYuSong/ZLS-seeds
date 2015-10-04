@@ -16,22 +16,22 @@ a {
 
 #btn_start {
     position: absolute;
-    left: 1475px;
+    left: 1450px;
     top: 50px; }
 
 #btn_downS {
     position: absolute;
-    left: 1475px;
+    left: 1450px;
     top: 100px; }
 
 #btn_upS {
     position: absolute;
-    left: 1475px;
+    left: 1450px;
     top: 150px; }
 
 #btn_reset {
     position: absolute;
-    left: 1475px;
+    left: 1450px;
     top: 200px; }
 
 .btn_main {
@@ -40,9 +40,12 @@ a {
 
 .name_ob {
     color: #006699;
+
     font-size: 20px;
     font-weight: bold; }
-
+#mainView a:hover{
+    text-decoration: none;
+}
 #name_QS {
     position: absolute;
     left: 681px;

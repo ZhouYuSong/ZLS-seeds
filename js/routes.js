@@ -88,6 +88,38 @@ define(['./app'], function (app) {
                 }
 
             })
+            .state('single_jjc',{
+                url:'/single_jjc',
+                views:{
+                    '':{
+                        templateUrl:'partials/single.html',
+                        controller:'showJjcCtrl'
+                    },
+                    'top@single_jjc': {
+                        templateUrl: 'partials/top.html'
+                    },
+                    'down@single_jjc': {
+                        templateUrl: 'partials/down.html'
+                    }
+                }
+
+            })
+            .state('single_vl',{
+                url:'/single_vl',
+                views:{
+                    '':{
+                        templateUrl:'partials/single.html',
+                        controller:'showVlCtrl'
+                    },
+                    'top@single_vl': {
+                        templateUrl: 'partials/top.html'
+                    },
+                    'down@single_vl': {
+                        templateUrl: 'partials/down.html'
+                    }
+                }
+
+            })
         ;
     })
 });

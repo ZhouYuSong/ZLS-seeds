@@ -1,5 +1,6 @@
 <div ui-view="top"></div>
 <div id="myContent_single" style="overflow: hidden">
+
     <div id="left" class="col-lg-10" style="height: 753px">
         <canvas id="canvas_single" width="1400" height="775"></canvas>
     </div>
@@ -21,14 +22,14 @@
                 <button id="btn_reset_single" class="btn btn-info btn-lg btn_main">重新开始</button>
             </div>
             <div id="list_group" class="list-group">
-                <button class="btn btn-info  btn_list " ui-sref="single({place:'showQs'})">取水泵房</button>
+                <button class="btn btn-info  btn_list " ui-sref="single_qs">取水泵房</button>
                 <button class="btn btn-info  btn_list disabled" ui-sref="single({place:1})">混合井</button>
-                <button class="btn btn-info  btn_list" ui-sref="single({place:'showJjc'})">机加池</button>
-                <button class="btn btn-info  btn_list" ui-sref="single({place:3})">V型滤池</button>
+                <button class="btn btn-info  btn_list" ui-sref="single_jjc">机加池</button>
+                <button class="btn btn-info  btn_list" ui-sref="single_vl">V型滤池</button>
                 <button class="btn btn-info  btn_list disabled" ui-sref="single({place:4})">臭氧池</button>
                 <button class="btn btn-info  btn_list disabled" ui-sref="single({place:5})">活性炭池</button>
                 <button class="btn btn-info  btn_list disabled" ui-sref="single({place:6})">清水池</button>
-                <button class="btn btn-info  btn_list " ui-sref="single({place:7})">厂平图</button>
+                <button class="btn btn-info  btn_list " ui-sref="show_dynamic">厂平图</button>
             </div>
 
         </div>
